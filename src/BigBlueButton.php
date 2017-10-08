@@ -56,8 +56,8 @@ class BigBlueButton
 
     public function __construct($baseUrl, $salt)
     {
-        $this->securitySalt     = $baseUrl;
-        $this->bbbServerBaseUrl = $salt;
+        $this->bbbServerBaseUrl = $baseUrl;
+        $this->securitySalt     = $salt;
         $this->urlBuilder       = new UrlBuilder($this->securitySalt, $this->bbbServerBaseUrl);
     }
 
